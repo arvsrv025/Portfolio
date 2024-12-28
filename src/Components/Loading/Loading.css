@@ -1,0 +1,12 @@
+.dekstop{
+    background-image: url('src/assets/loading-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    mask-image: url('src/assets/intro_gif.gif');
+    mask-size:cover;
+    mask-position: center;
+    
+}
