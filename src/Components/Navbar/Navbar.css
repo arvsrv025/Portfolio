@@ -1,0 +1,74 @@
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    background-color: black; /* Dark Background */
+    color: #1ea706;
+    padding: 5px 40px;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 100%;
+    /* margin: auto; */
+  }
+  
+  /* Logo */
+  .logo{
+    height: 3rem;
+    width:3rem;
+    background-image: url("../../assets/logo.png");
+    background-size: 3rem 3rem;
+    background-repeat: no-repeat;
+     font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1ea706;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    padding: 10px 1rem;
+    margin:10px 1rem;
+    text-decoration: none;
+    color:#1ea706;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+    transition: font-size 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #9edc93;
+    font-size: 1.1rem;
+    }
+  
+  /* Mobile Menu (Hidden on Desktop) */
+  .hamburger {
+    display: none;
+  }
+  
+  /* Responsive - Show Hamburger on Small Screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide the menu on mobile */
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  
